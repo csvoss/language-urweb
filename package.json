@@ -1,0 +1,24 @@
+{
+  "name": "language-urweb",
+  "author": "Chelsea Voss <csvoss@mit.edu>",
+  "homepage": "https://github.com/csvoss/language-urweb",
+  "version": "0.0.0",
+  "description": "Ur/Web language support (grammars and snippets) for Atom",
+  "keywords": [
+    "urweb",
+    "ur",
+    "grammar",
+    "syntax"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csvoss/language-urweb"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/csvoss/language-urweb/issues"
+  }
+}

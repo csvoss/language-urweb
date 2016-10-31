@@ -1,0 +1,66 @@
+'.source.urweb-implementation':
+  'UrWeb "case" pattern matching':
+    'prefix': 'case'
+    'body': """
+      case ${1:expression} of
+      	${2:pattern1} => ${3:body1}
+      	| ${4:pattern2} => ${5:body2}$0
+    """
+  'UrWeb "datatype" declaration':
+    'prefix': 'datatype'
+    'body': """
+      datatype ${1:name} =
+      	${2:name1} of ${3:type1}
+      	| ${4:name2} of ${5:type2}$0
+    """
+  'UrWeb "fn" anonymous function':
+    'prefix': 'fn'
+    'body': """
+      fn ${1:arguments} =>
+      	${2:body}$0
+    """
+  'UrWeb "fun" function':
+    'prefix': 'fun'
+    'body': """
+      fun ${1:function_name} ${2:arguments} =
+      	${0:body}$0
+    """
+  'UrWeb "functor" declaration':
+    'prefix': 'functor'
+    'body': """
+      functor ${1:name} (${2:argument}) =
+      struct
+      	${3:(* Body *)}
+      end$0
+    """
+  'UrWeb "if/then/else" block':
+    'prefix': 'if'
+    'body': 'if ${1:expression} then ${2:expression} else ${3:expression}$0'
+  'UrWeb "let" block':
+    'prefix': 'let'
+    'body': """
+      let
+      	val ${1:name} = ${2:value}
+      in
+      	${3:body}
+      end$0
+    """
+  'UrWeb "signature" declaration':
+    'prefix': 'signature'
+    'body': """
+      signature ${1:name} =
+      sig
+      	${2:(* Body *)}
+      end$0
+    """
+  'UrWeb "structure" declaration':
+    'prefix': 'structure'
+    'body': """
+      structure ${1:name} =
+      struct
+      	${2:(* Body *)}
+      end$0
+    """
+  'UrWeb "val" declaration with type':
+    'prefix': 'val'
+    'body': 'val ${1:name} : ${2:type} = ${3:expression}$0'
