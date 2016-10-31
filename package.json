@@ -2,7 +2,7 @@
   "name": "language-urweb",
   "author": "Chelsea Voss <csvoss@mit.edu>",
   "homepage": "https://github.com/csvoss/language-urweb",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Ur/Web language support (grammars and snippets) for Atom",
   "keywords": [
     "urweb",
