@@ -2,5 +2,4 @@
 
 Ur/Web language support (grammars and snippets) for Atom.
 
-
-Still TODO: expand the stub files in `grammars/`.
+Still TODO: syntax highlighting for `.urs` and `.urp`.
